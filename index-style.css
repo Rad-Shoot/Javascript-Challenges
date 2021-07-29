@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+:root{
+    font-size: 18px;
+    line-height: 1.6rem;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(yellow-bg.jpg);
+}
+
+.heading{
+    font-size: 2.25rem;
+    color: white;
+    background-color: black;
+    padding: 2rem;
+    line-height: 3rem;
+    margin-top: -1rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 60%;
+    border: 2px solid black;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    background-color: white;
+}
+
+section h1{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+h2{
+    font-size: 1.25rem;
+}
+
+#result-box-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#result-box-2 img{
+    width: 180px;
+    margin: 10px;
+    box-shadow: 0px 10px 25px #333;
+}
+
+.rps-img{
+    height: 100px;
+    width: 100px;
+}
+
+.rps-img:hover{
+    box-shadow: 0 0 25px rgb(75, 170, 255);
+}
+
+#result-box-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    line-height: 0;
+}
+
+.btn{
+    font-size: 1.125rem;
+    padding: 0.425rem;
+    border: none;
+    border-radius: 5%;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 2px 2px #333;
+    transform: translateY(-5px);
+}
+
+.bluebtn{
+    background-color:rgb(75, 170, 255);
+}
+
+.redbtn{
+    background-color: rgb(255,0,20);
+}
+
+.greenbtn{
+    background-color: rgb(0, 255, 85);
+}
+
+.yellowbtn{
+    background-color: rgb(255, 251, 0);
+    color: black;
+}
+
+select{
+    height: 38.5px;
+    position: relative;
+    right: 1rem;
+}
+
+select:focus{
+    border-color: rgb(75, 170, 255);
+}
+
+#result-box-4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.blackjack-playing-area{
+    background: url(blackjack-background.jpg) center;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.blackjack-playing-area div{
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.blackjack-playing-area img{
+    height: 120px;
+    padding: 10px;
+}
+
+.blackjack-buttons{
+    background: url(blackjack-background.jpg) center;
+    padding: 1rem;
+}
+
+.blackjack-buttons button{
+    margin: 0 0.25rem;
+}
+
+table,tr,td,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    max-width: 30%;
+    margin: 0.5rem auto;
+}
+
+th{
+    padding: 5px;
+}

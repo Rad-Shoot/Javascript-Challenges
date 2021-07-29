@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Challenges</title>
+    <link rel="icon" href="jslogo.png">
+    <link rel="stylesheet" href="index-style.css">
+    <script src="index-script.js" defer></script>
+</head>
+<body>
+    <h1 class="heading">Javascript Challenges</h1>
+
+    <div class="container">
+    <!--Your Age in Days-->
+    <section>
+    <h1>Your Age in Days</h1>
+
+    <button class="btn bluebtn" onclick="generateDays()">Generate</button>
+    <button class="btn redbtn" onclick="resetAge()">Reset</button>
+
+    <div id="result-box-1"> </div>
+    </section>
+
+    <!--Cat Generator-->
+    <section>
+    <h1>Random Cat Generator</h1>
+
+    <button class="btn bluebtn" onclick="generateCat()">Generate</button>
+    <button class="btn redbtn" onclick="resetCat()">Reset</button>
+
+    <div id="result-box-2"> </div>
+    </section>
+
+    <!--Rock, Paper, Scissors-->
+<section>
+    <h1>Rock, Paper, Scissors</h1>
+    <div id="result-box-3">
+    <img id="rock" src="rock.png" alt="rock" class="rps-img" onclick="rpsGame(this)" >
+    <img id="paper" src="paper.png" alt="paper" class="rps-img" onclick="rpsGame(this)" >
+    <img id="scissor" src="scissor.png" alt="scissor" class="rps-img" onclick="rpsGame(this)" >
+    </div>
+</section>
+
+<!--Change Color of all Buttons-->
+<section>
+<h1>Change Color of all Buttons</h1>
+<div id="result-box-4">
+<div>
+<select name="colorChange" id="colorChange" onchange="colorChange(this)">
+<option value="reset">Default Colors</option>
+<option value="blue">Blue</option>
+<option value="red">Red</option>
+<option value="random">Random</option>
+</select>
+</div>
+<div>
+<button class="btn bluebtn">Wee!</button>
+<button class="btn redbtn">Woo!</button>
+<button class="btn greenbtn">Yoo!</button>
+<button class="btn yellowbtn">Yee!</button>
+</div>
+</div>
+</section>
+
+<!--Blackjack: Lets Play!-->
+<section>
+    <div>
+    <h1>Blackjack</h1>
+    <h2 id="blackjack-result">Let's Play!</h2>
+    </div>
+    <div class="blackjack-playing-area">
+        <div id="player-area">
+        <h2>You: <span id="player-score">0</span></h2>
+        </div>
+        <div id="dealer-area">
+        <h2>Dealer: <span id="dealer-score">0</span></h2>
+        </div>
+    </div>
+    <div class="blackjack-buttons">
+        <button class="btn bluebtn" id="blackjackHit">Hit</button>
+        <button class="btn yellowbtn" id="blackjackStand">Stand</button>
+        <button class="btn redbtn" id="blackjackDeal">Deal</button>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Draws</th>
+            </tr>
+            <tr>
+                <td><span id="blackjackWins">0</span></td>
+                <td><span id="blackjackLoss">0</span></td>
+                <td><span id="blackjackDraws">0</span></td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+
+</div>
+</body>
+</html>
